@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+
+<class name="com.simplimearn.Hibernatedemo.HibernateDemoEMS.HibernateDemoEMS.model.Employee" table="Employee">
+
+	<id name="empId" type="int" column="empId">
+	 <generator class="native">
+	 </generator>
+	</id>
+	
+	
+	<property name="empName"></property>
+	<property name="salary"></property>
+	<property name="department"></property>
+	
+</class>
+
+
+
+</hibernate-mapping>
