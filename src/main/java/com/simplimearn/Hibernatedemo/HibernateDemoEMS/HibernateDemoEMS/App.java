@@ -21,13 +21,13 @@ public class App
         
     	
     	//1.load configuration
-    	StandardServiceRegistry sService = new StandardServiceRegistryBuilder().configure("").build();
+    	StandardServiceRegistry sService = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
     	Metadata meta = new MetadataSources(sService).getMetadataBuilder().build();
     	
     	SessionFactory factory = meta.getSessionFactoryBuilder().build();
-    	
+    	// Step2
     	Session session =factory.openSession();
-    	
+    	// step3
     	Transaction trans = session.beginTransaction();
     	
     	Employee emp = new Employee();
